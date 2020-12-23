@@ -1,4 +1,4 @@
 function addFunc()
 {
-    Text()
+    Text("hello world");
 }
