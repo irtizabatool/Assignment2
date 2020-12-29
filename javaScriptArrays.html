@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Arrays</title>
+        <script>
+            var employees = new Array("Mike","Michael","Mark","Phoebe","Joey");
+            document.write("Total number of employees are: "+employees.length+"</br>");
+            Array.prototype.displayEmployees = function()
+            {
+                for(var i=0; i<this.length;i++)
+                {
+                    document.write(this[i]+"</br>");
+                }
+            }
+            document.write("Employees are: </br>");
+            employees.displayEmployees();
+            document.write("</br>Sorted names of employees is: </br>");
+            employees.sort();
+            employees.displayEmployees();
+            document.write("</br>Reversing the array elements</br>");
+            employees.reverse();
+            employees.displayEmployees();
+            document.write("</br>After adding new employee</br>");
+            employees.push("Chandler");
+            employees.displayEmployees();
+            document.write("</br>Removing the last employee</br>");
+            employees.pop();
+            employees.displayEmployees();
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

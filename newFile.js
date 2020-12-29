@@ -1,0 +1,4 @@
+function addFunc()
+{
+    Text("hello");
+}
