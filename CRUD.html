@@ -23,5 +23,28 @@
             <tbody id="countries"></tbody>
         </table>
 
+        <script>
+        var app = new function()
+        {
+            this.el = document.getElementById('countries');
+            this.countries = ['France', 'Germany', 'England', 'Spain', 'Belgium', 'Italy', 'Portugal', 'Irland', 'Luxembourg'];
+            this.Count = function(data)
+            {
+                var el   = document.getElementById('counter');
+                var name = 'country';
+                if (data)
+                {
+                    if (data > 1)
+                    {
+                        name = 'countries';
+                    }
+                    el.innerHTML = data + ' ' + name ;
+                } else 
+                {
+                    el.innerHTML = 'No ' + name;
+                }
+            };
+        };
+        </script>
     </body>
 </html>
