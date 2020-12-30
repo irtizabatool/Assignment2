@@ -71,6 +71,21 @@
                     this.Count(this.countries.length);
                     return this.el.innerHTML = data;
                 };
+                this.Add = function ()
+                {
+                    el = document.getElementById('add-name');
+                    // Get the value
+                    var country = el.value;
+                    if (country)
+                    {
+                        // Add the new value
+                        this.countries.push(country.trim());
+                        // Reset input value
+                        el.value = '';
+                        // Dislay the new list
+                        this.FetchAll();
+                    }
+                };
             };
         </script>
     </body>
