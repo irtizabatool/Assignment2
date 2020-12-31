@@ -109,6 +109,13 @@
                         }
                     }
                 };
+                this.Delete = function (item)
+                {
+                    // Delete the current row
+                    this.countries.splice(item, 1);
+                    // Display the new list
+                    this.FetchAll();
+                };                
             };
         </script>
     </body>
