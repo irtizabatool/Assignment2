@@ -86,6 +86,29 @@
                         this.FetchAll();
                     }
                 };
+                this.Edit = function (item) 
+                {
+                    var el = document.getElementById('edit-name');
+                    // Display value in the field
+                    el.value = this.countries[item];
+                    // Display fields
+                    document.getElementById('spoiler').style.display = 'block';
+                    self = this;
+                    document.getElementById('saveEdit').onsubmit = function() 
+                    {
+                        // Get value
+                        var country = el.value;
+                        if (country) 
+                        {
+                            // Edit value
+                            self.countries.splice(item, 1, country.trim());
+                            // Display the new list
+                            self.FetchAll();
+                            // Hide fields
+                            CloseInput();
+                        }
+                    }
+                };
             };
         </script>
     </body>
