@@ -16,6 +16,7 @@
         <option value="e">Equal to 50</option>
     </select>
     <input type = "submit" value = "Submit guess" id = "submitguess"> 
+    <p id="display">TRY TO GUESS</p>
 </div> 
   
 <script>
@@ -24,15 +25,15 @@
         var value = document.getElementById("guess").value;
         if(num == 50 && value==="e")
         {
-            alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT AND NUMBER IS "+ num);
+            document.getElementById("display").innerHTML="CONGRATULATIONS!!! YOU GUESSED IT RIGHT AND NUMBER IS "+ num;
         }
         else if(num<50 && value==="l")
         {
-            alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT AND NUMBER IS "+ num);
+            document.getElementById("display").innerHTML="CONGRATULATIONS!!! YOU GUESSED IT RIGHT AND NUMBER IS "+ num;
         }
         else if(num>50 && value==="h")
         {
-            alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT AND NUMBER IS "+ num);
+            document.getElementById("display").innerHTML="CONGRATULATIONS!!! YOU GUESSED IT RIGHT AND NUMBER IS "+ num;
         }
         else
         {
