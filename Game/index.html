@@ -1,0 +1,26 @@
+<html> 
+<head>  
+    <title>Number Guessing Game</title>  
+</head> 
+  
+<body> 
+<h1 style="text-align: center;">Guess The Number</h1> 
+  
+<p id = "top" style="text-align: center;">I have selected a random number between 1 - 100. See if you can guess it.</p> 
+  
+<div id = "ui" style="text-align: center;"> 
+    <label for="guess">Select your guess: </label> 
+    <select name="guess" id="guess">
+        <option value="l">Less than 50</option>
+        <option value="h">Greater than 50</option>
+        <option value="e">Equal to 50</option>
+    </select>
+    <input type = "submit" value = "Submit guess" id = "submitguess"> 
+    <p id="display">It is Player 1's turn to guess</p>
+</div> 
+  
+<script src="game.js">
+    
+</script> 
+</body> 
+</html>  
