@@ -1,17 +1,28 @@
 table, th, td
 {
     border-style: dotted;
-    background-color: cyan;
     text-align: center;
+    color: white;
 }
 table
 {
     width: 600px;
-    
+    height: 200px;
+    opacity: 0.9;
+    background-image: url("owl.jpg");
+    background-repeat: no-repeat;
 }
-ul a
-{
-    color: green;
+ul a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+a:hover, a:active {
+    background-color: red;
 }
 .myHeader
 {
@@ -30,4 +41,8 @@ input [type = "text"]
 hr
 {
     height: 3px;
+}
+a
+{
+    color: whitesmoke;
 }
