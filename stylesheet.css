@@ -1,0 +1,33 @@
+table, th, td
+{
+    border-style: dotted;
+    background-color: cyan;
+    text-align: center;
+}
+table
+{
+    width: 600px;
+    
+}
+ul a
+{
+    color: green;
+}
+.myHeader
+{
+    color: blueviolet;
+    text-align: center;
+}
+#myheader
+{
+    color: crimson;
+}
+input [type = "text"]
+{
+    color: darkblue;
+    width: 50px;
+}
+hr
+{
+    height: 3px;
+}
